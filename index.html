@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--
+        - primary meta tats
+    -->
+    <title>SIC Merchandise</title>
+    <meta name="title" content="sic">
+    <meta name="description" content="this cool website developed by Reznaf">
+
+    <!--
+        - favicon
+    -->
+    <link rel="shortcut icon" href="./logo favicon.svg" type="image/svg+xml">
+
+    <!--
+        - google font
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!--
+        - google icon link
+    -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
+
+    <!--
+        - custom css link
+    -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!--
+        - custom js link
+    -->
+    <script src="./main.js" defer></script>
+
+    <!--
+        - preload images
+    -->
+
+    
+</head>
+<body>
+    
+    <!--
+        - #HEADER
+    -->
+
+    <header class="header" data-header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./assets/images/Logo.png" width="48" height="28" alt="sic">
+            </a>
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#" class="navbar-link label-medium active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Buy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link label-medium">Preorder</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-link label-medium">About</a>
+                    </li>
+                </ul>
+                <div class="navbar-wrapper">
+                    <a href="#" class="btn-link label-medium">Login</a>
+                    <a href="#" class="btn btn-outline label-medium">Get Started</a>
+                </div>
+            </nav>
+            <button class="nav-toggle-btn icon-btn" aria-label="toggle navbar" data-nav-toggler>
+                <span class="material-symbols-rounded open" aria-hidden="true">menu</span>
+                <span class="material-symbols-rounded close" aria-hidden="true">close</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <article>
+            <!--
+                - #HERO
+            -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="headline-large hero-title">We make things fit for the king, and the queen of course</h1>
+                        <p class="body-large hero-text">
+                            Feel free to choose any of these masterpiece. search to your heart content.
+                        </p>
+                        <form action="./" method="get" class="search-bar">
+                            <label class="search-item">
+                                <span class="label-medium label">Want to</span>
+                                <select name="want-to" class="search-item-field body-medium">
+                                    <option value="buy" selected>Buy</option>
+                                    <option value="pre-order">Pre-order</option>
+                                </select>
+                                <span class="material-symbols-rounded" aria-hidden="true">shopping_cart</span>
+                            </label>
+                            <label class="search-item">
+                                <span class="label-medium label">Merch type</span>
+                                <select name="merch-type" class="search-item-field body-medium">
+                                    <option value="any" selected>Any</option>
+                                    <option value="shirt">Shirt</option>
+                                    <option value="jacket">Jacket</option>
+                                    <option value="accesories">Accesories</option>
+                                </select>
+                                <span class="material-symbols-rounded" aria-hidden="true">storefront</span>
+                            </label>
+                            <button type="submit" class="search-btn">
+                                <span class="material-symbols-rounded" aria-hidden="true">search</span>
+                                <span class="label-medium">Search</span>
+                            </button>
+                        </form>
+                    </div>
+                    <img src="./assets/images/Banner 1.png" width="816" height="659" role="presentation"
+                    class="hero-banner">
+                    <img src="./assets/images/bg-pattern2.png" width="1920" height="840" role="presentation"
+                    class="bg-pattern">
+                </div>
+            </section>
+            <!--
+                - #MERCH SECTION
+            -->
+            <section class="section merch" aria-labelledby="merch-label"></section>
+            <div class="container">
+                <div class="title-wrapper">
+                    <div>
+                        <h2 class="section-title headline-small">Trendy things</h2>
+                        <p class="section-text body-large">
+                            Our finest designs, made out of wild creativity. suitable to make people jealous
+                        </p>
+                    </div>
+                    <a href="#" class="btn btn-outline">
+                        <span class="label-medium">Explore more</span>
+                        <span class="material-symbols-rounded" aria-hidden="true">arrow_outward</span>
+                    </a>
+                </div>
+                <div class="merch-list">
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width:585; --height:390;">
+                                <img src="./assets/images/Baju 1.png" width="585" height="390" alt="Starboy Ngawi Ambatukam Edition"
+                                class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">New</span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">Rp95.000</span>
+                            <h3>
+                                <a href="#" class="title-small card-title">Starboy Ngawi: Ambatukam Edition</a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                T-shirt
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">inventory_2</span>
+                                    <span class="meta-text label-medium">100 Left</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width:585; --height:390;">
+                                <img src="./assets/images/Baju 2.png" width="585" height="390" alt="Starboy Ngawi Rusdi Edition"
+                                class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">New</span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">Rp95.000</span>
+                            <h3>
+                                <a href="#" class="title-small card-title">Starboy Ngawi: Rusdi Edition</a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                T-shirt
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">inventory_2</span>
+                                    <span class="meta-text label-medium">100 Left</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-banner">
+                            <figure class="img-holder" style="--width:585; --height:390;">
+                                <img src="./assets/images/Baju 3.png" width="585" height="390" alt="Starboy Ngawi Fuad Edition"
+                                class="img-cover">
+                            </figure>
+                            <span class="badge label-medium">New</span>
+                            <button class="icon-btn fav-btn" aria-label="add to favorite" data-toggle-btn>
+                                <span class="material-symbols-rounded" aria-hidden="true">favorite</span>
+                            </button>
+                        </div>
+                        <div class="card-content">
+                            <span class="title-large">Rp95.000</span>
+                            <h3>
+                                <a href="#" class="title-small card-title">Starboy Ngawi: Fuad Edition</a>
+                            </h3>
+                            <address class="body-medium card-text">
+                                T-shirt
+                            </address>
+                            <div class="card-meta-list">
+                                <div class="meta-item">
+                                    <span class="material-symbols-rounded meta-icon" aria-hidden="true">inventory_2</span>
+                                    <span class="meta-text label-medium">100 Left</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+</body>
+</html>
