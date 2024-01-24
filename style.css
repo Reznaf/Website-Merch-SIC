@@ -16,6 +16,7 @@
     --primary-40: #0D3166;
     --primary-20: #071833;
     --alternate-100:#4569e0;
+    --alternate-80:#3752aa;
     --alternate-90:#4060ca;
     --secondary-100: #21FFFF;
     --secondary-20: #073333;
@@ -643,6 +644,7 @@ body {
  #FEATURE
 \*-------------------------------------*/
 
+
 .feature-banner {
     aspect-ratio: 3/2;
     overflow: hidden;
@@ -674,5 +676,162 @@ body {
 
 
 /*-------------------------------------*\
- #FEATURE
+ #FOOTER
 \*-------------------------------------*/
+
+.footer {
+    background-color: var(--alternate-80);
+    color: var(--neutral-90);
+}
+
+.footer-top .container {
+    padding-block: 60px;
+    display: grid;
+    gap: 24px;
+}
+
+.footer-brand .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 16px;
+}
+
+.footer-text {margin-block: 16px;}
+
+.footer-list-title {margin-block-end: 16px;}
+
+.footer-list {
+    display: grid;
+    gap: 16px;
+}
+
+.footer-link {transition: var(--transition-duration-quick) var(--transition-easing-quick);}
+
+.footer-link:where(:hover, :focus-visible) {color: var(--primary-100);}
+
+.social-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-bottom {border-block-start: 1px solid var(--neutral-20);}
+
+.footer-bottom .container {
+    padding-block: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+/*-------------------------------------*\
+ #MEDIA QUERIES
+\*-------------------------------------*/
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+ @media (min-width: 768px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+
+     :root{
+        /**
+         * TYPOGRAPHY
+         */
+        
+        /* font size */
+        --fs-headline-large: 5.2rem;
+        --fs-headline-large: 4rem;
+        --fs-headline-large: 4rem;
+
+        /*line height */
+        --lh-headline-large: 74px;
+        --lh-headline-medium: 62px;
+        --lh-headline-small: 58px
+     }
+
+     /**
+     * REUSED STYLE
+     */
+
+    .container {max-width: 720px;}
+
+    .section {padding-block-end: 80px;}
+
+    .title-wrapper{
+        display: grid;
+        grid-template-columns: 1fr max-content;
+        align-items: center;
+        gap: 40px;
+        margin-block-end: 48px;
+
+    }
+
+    /**
+     * HERO
+     */
+    
+    .hero {padding-block: 160px 100px;}
+
+    .search-bar {
+        grid-template-columns: 160px 160px 1fr max-content;
+        gap: 0;
+    }
+
+    .search-item .material-symbols-rounded {display: none;}
+    .search-item:not(:last-of-type)::after{
+        content: "";
+        position: absolute;
+        top: 16px;
+        left: 100%;
+        bottom: 16px;
+        width: 1px;
+        background-color: var(--neutral-90);
+    }
+
+    .search-btn {
+        height: 100%;
+        margin-inline-start: 8px;
+    }
+
+    /**
+     * PROPERTY
+     */
+
+    .merch {padding-block-start: 80px;}
+
+    .merch .section-text {margin-block-end: 0;}
+
+    /**
+     * FEATURE
+     */
+    
+    .feature-content {padding-block-start: 32px;}
+
+    .feature-content .feature-text {
+        margin-block: 16px 24px;
+        line-height: 28px;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    /**
+     * FOOTER
+     */
+
+    .footer-top .container {
+        padding-block: 80px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-brand {grid-column: 1/4;}
+
+    .footer-text {max-width: 400px;}
+
+
+ }
